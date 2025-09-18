@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday RARA 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url('https://i.ibb.co/5cJcLwX/hbd-bg.jpg') no-repeat center center/cover;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    h2 {
+      color: #ffeb3b;
+      text-shadow: 2px 2px 5px #000;
+      margin-bottom: 20px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081; }
+      to { text-shadow: 0 0 20px #ff80ab, 0 0 30px #ff80ab; }
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 80px;
+      animation: float 8s infinite ease-in;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+    }
+
+    .message {
+      background: rgba(0,0,0,0.5);
+      padding: 15px 25px;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 1.2em;
+      max-width: 80%;
+      text-align: center;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday RARA 🎉</h1>
+  <h2>Semoga selalu bahagia 💖</h2>
+  <div class="message">
+    Hari ini adalah hari spesialmu, RARA 🌸<br>
+    Semoga semua impianmu terwujud dan senyum indahmu selalu bersinar ✨
+  </div>
+
+  <!-- Balon terbang -->
+  <img src="https://i.ibb.co/QmH0nSk/balloon-pink.png" class="balloon" style="left:10%; animation-delay:0s;">
+  <img src="https://i.ibb.co/8D1R1F3/balloon-blue.png" class="balloon" style="left:40%; animation-delay:2s;">
+  <img src="https://i.ibb.co/s15nTts/balloon-yellow.png" class="balloon" style="left:70%; animation-delay:4s;">
+
+  <!-- Musik otomatis -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
