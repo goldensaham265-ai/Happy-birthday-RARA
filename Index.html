@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #0d0d1a, #000);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #ffd369;
+      text-shadow: 0 0 10px #ffd369, 0 0 20px #ff9f1c;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: linear-gradient(90deg, #ff6b6b, #ffd369);
+      color: #222;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 100, 0.7);
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .quotes {
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .quotes p {
+      margin: 15px 0;
+      color: #ffd369;
+      text-shadow: 0 0 5px #ff9f1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Selamat Ulang Tahun ✨</h1>
+    <p class="subtitle">Semoga hidupmu dipenuhi cahaya, kehangatan, dan kebahagiaan yang tak pernah padam.</p>
+    <button id="reveal">Lihat Kejutan 🎁</button>
+    <div id="quote" class="quotes"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const quotes = [
+        "✨ Di antara kabut misteri, semoga langkahmu selalu menemukan cahaya. ✨",
+        "🌙 Seperti bulan yang mengintip di langit malam, semoga harapanmu tak pernah redup. 🌙",
+        "🔮 Dalam tiap rahasia waktu, semoga kebahagiaan selalu menemuimu. 🔮",
+        "🌌 Bintang-bintang menyimpan rahasia, dan salah satunya adalah doaku untukmu. 🌌",
+        "🔥 Bahkan dalam gelap, ada bara kecil yang tak padam. Semoga itu selalu ada dalam hatimu. 🔥"
+      ];
+
+      const btn = document.getElementById("reveal");
+      const container = document.getElementById("quote");
+
+      btn.addEventListener("click", () => {
+        container.innerHTML = ""; // kosongkan dulu
+        quotes.forEach(text => {
+          const p = document.createElement("p");
+          p.textContent = text;
+          container.appendChild(p);
+        });
+        btn.style.display = "none"; // sembunyikan tombol setelah ditekan
+      });
+    });
+  </script>
+</body>
+</html>
+
+
